@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cpy.screenculturemanagement.mapper.EquipmentMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        singlecode, classfyid, modelid, serialcode, purchase_time, insurance_time, source, durationdate, insurance_state, equipment_state, create_time, update_time, remark
+    </sql>
+
+    <select id="getEquipmentById" resultType="com.cpy.screenculturemanagement.vo.EquipmentQueryVo">
+        select
+        <include refid="Base_Column_List"/>
+        from t_equipment where id = #{id}
+    </select>
+
+    <select id="getEquipmentPageList" parameterType="com.cpy.screenculturemanagement.param.EquipmentPageParam" resultType="com.cpy.screenculturemanagement.vo.EquipmentQueryVo">
+        select
+        <include refid="Base_Column_List"/>
+        from t_equipment
+    </select>
+
+</mapper>

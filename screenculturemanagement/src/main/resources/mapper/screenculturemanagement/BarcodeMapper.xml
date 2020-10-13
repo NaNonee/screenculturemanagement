@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cpy.screenculturemanagement.mapper.BarcodeMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, equipmentsinglecode, url, remark, operator, create_time, update_time
+    </sql>
+
+    <select id="getBarcodeById" resultType="com.cpy.screenculturemanagement.vo.BarcodeQueryVo">
+        select
+        <include refid="Base_Column_List"/>
+        from t_barcode where id = #{id}
+    </select>
+
+    <select id="getBarcodePageList" parameterType="com.cpy.screenculturemanagement.param.BarcodePageParam" resultType="com.cpy.screenculturemanagement.vo.BarcodeQueryVo">
+        select
+        <include refid="Base_Column_List"/>
+        from t_barcode
+    </select>
+
+</mapper>
