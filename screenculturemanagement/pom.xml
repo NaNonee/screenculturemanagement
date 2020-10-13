@@ -17,6 +17,18 @@
             <groupId>io.geekidea.springbootplus</groupId>
             <artifactId>framework</artifactId>
         </dependency>
+        <!-- 条形码依赖包-->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>3.3.3</version>
+        </dependency>
+        <!-- 条形码解析包-->
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>3.1.0</version>
+        </dependency>
     </dependencies>
 
 
