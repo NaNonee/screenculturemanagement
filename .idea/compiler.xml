@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Annotation profile for spring-boot-plus" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -22,16 +23,16 @@
           <entry name="D:/SoftWare/apache-maven-3.6.3/repository/joda-time/joda-time/2.9/joda-time-2.9.jar" />
           <entry name="D:/SoftWare/apache-maven-3.6.3/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar" />
         </processorPath>
-        <module name="system" />
-        <module name="framework" />
+        <module name="admin" />
         <module name="scheduled" />
-        <module name="generator" />
-        <module name="distribution" />
+        <module name="config" />
+        <module name="system" />
         <module name="example" />
+        <module name="framework" />
         <module name="screenculturemanagement" />
         <module name="bootstrap" />
-        <module name="config" />
-        <module name="admin" />
+        <module name="distribution" />
+        <module name="generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
