@@ -118,6 +118,7 @@ public class GoogleBarCodeUtils {
     }
     public static void main(String[] args) throws IOException {
 //        BufferedImage image = insertWords(getBarCode("123456789"), "123456789");
+        //        BufferedImage image = insertWords(getBarCode("123456789"), "123456789");
 //        A80/90R8A(8A侧通孔)
         BufferedImage image = insertWords(getBarCode("122222"), "11");
         ImageIO.write(image, "jpg", new File("D:\\Files\\code\\barcode2.png"));
